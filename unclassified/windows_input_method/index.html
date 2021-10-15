@@ -11,7 +11,7 @@
 @echo off set MainKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\InputMethod\Settings\CHS reg query %MainKey% /v &#34;Enable Double Pinyin&#34; /s for /f &#34;skip=1&#34; %%i in (&#39;reg query %MainKey% /v &#34;Enable Double Pinyin&#34; /s ^| findstr /i &#34;0x1&#34;&#39;) do ( set isDouble=1 ) if not defined isDouble ( reg add %MainKey% /v &#34;Enable Double Pinyin&#34; /t REG_DWORD /d 0x1 /f echo 设定微软拼音模式为: 双拼 ) else ( reg add %MainKey% /v &#34;Enable Double Pinyin&#34; /t REG_DWORD /d 0x0 /f echo 设定微软拼音模式为: 全拼 ) pause " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://capscroLL.github.io/unclassified/windows_input_method/" />
-<meta property="article:modified_time" content="2021-10-15T15:53:02+08:00" />
+<meta property="article:modified_time" content="2021-10-15T16:02:05+08:00" />
 <title>微软拼音切换输入模式 | capscroLL</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
@@ -235,7 +235,7 @@ pause
   <div class="flex flex-wrap justify-between">
 
 
-  <div><a class="flex align-center" href="https://github.com/capscroLL/capscroLL.github.io/commit/6697f79733188bd20f253381800eb37f32e1a893" title='最后修改者 wangyixue02 | October 15, 2021' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/capscroLL/capscroLL.github.io/commit/c20ad16f6e3bb12bac8b0a3e6ca35c5908178979" title='最后修改者 wangyixue02 | October 15, 2021' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>October 15, 2021</span>
     </a>
@@ -260,19 +260,18 @@ document.querySelectorAll("pre code").forEach(code=>{code.addEventListener("clic
 
 
  
-        
+        <script src="https://utteranc.es/client.js"
+        repo="capscroLL/capscroLL.github.io"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script>
       </footer>
 
       
   
   <div class="book-comments">
-<script src="https://utteranc.es/client.js"
-        repo="https://github.com/capscroLL/capscroLL.github.io"
-        issue-term="comments"
-        theme="preferred-color-scheme"
-        crossorigin="anonymous"
-        async>
-</script>
+
 </div>
   
  
