@@ -11,12 +11,12 @@
 @echo off set MainKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\InputMethod\Settings\CHS reg query %MainKey% /v &#34;Enable Double Pinyin&#34; /s for /f &#34;skip=1&#34; %%i in (&#39;reg query %MainKey% /v &#34;Enable Double Pinyin&#34; /s ^| findstr /i &#34;0x1&#34;&#39;) do ( set isDouble=1 ) if not defined isDouble ( reg add %MainKey% /v &#34;Enable Double Pinyin&#34; /t REG_DWORD /d 0x1 /f echo 设定微软拼音模式为: 双拼 ) else ( reg add %MainKey% /v &#34;Enable Double Pinyin&#34; /t REG_DWORD /d 0x0 /f echo 设定微软拼音模式为: 全拼 ) pause " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://capscroLL.github.io/en/unclassified/windows_input_method/" />
-<meta property="article:modified_time" content="2021-10-16T01:46:37+08:00" />
+<meta property="article:modified_time" content="2021-10-16T02:22:08+08:00" />
 <title>Windows Input Method | capscroLL</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
   <link rel="alternate" hreflang="zh" href="https://capscroLL.github.io/unclassified/windows_input_method/" title="微软拼音切换输入模式">
-<link rel="stylesheet" href="/book.min.d4dc77238886ba9b68049c5bf55f2cee407597ba579bac1c5c89e9faef0ed76c.css" integrity="sha256-1Nx3I4iGuptoBJxb9V8s7kB1l7pXm6wcXInp&#43;u8O12w=" crossorigin="anonymous">
+<link rel="stylesheet" href="/book.min.d9d4fc0aac7857637ba0b13c3ef5e9c65042b61dec00899b30054866ecbd5a19.css" integrity="sha256-2dT8Cqx4V2N7oLE8PvXpxlBCth3sAImbMAVIZuy9Whk=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
   <script defer src="/en.search.min.1101e0643dc649cbdcc82f84729fe0e6d3d6f7ea16593587f78c07bf3c6d5b23.js" integrity="sha256-EQHgZD3GScvcyC&#43;Ecp/g5tPW9&#43;oWWTWH94wHvzxtWyM=" crossorigin="anonymous"></script>
 
@@ -47,45 +47,6 @@ https://github.com/alex-shpak/hugo-book
   <ul id="book-search-results"></ul>
 </div>
 
-
-
-  
-
-
-  
-    
-  
-    
-  
-
-
-  
-
-
-<div class="book-languages" tabindex="0" aria-haspopup="true">
-  <ul>
-    <li class="flex align-center">
-      <img src="/%20svg/translate.svg" class="book-icon" alt="Languages" />
-      English
-    </li>
-  </ul>
-
-  <ul class="book-languages-list">
-    
-    <li>
-      <a href="/unclassified/windows_input_method/"  class="flex align-center">
-        简体中文
-      </a>
-    </li>
-    
-    <li>
-      <a href="/en/"  class="flex align-center">
-        English
-      </a>
-    </li>
-    
-  </ul>
-</div>
 
 
 
@@ -245,6 +206,7 @@ pause
   
 
 
+
   
     
   
@@ -258,21 +220,23 @@ pause
 <div class="book-languages" tabindex="0" aria-haspopup="true">
   <ul>
     <li class="flex align-center">
-      <img src="/%20svg/translate.svg" class="book-icon" alt="Languages" />
+      <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
       English
     </li>
   </ul>
 
   <ul class="book-languages-list">
     
-    <li>
-      <a href="/unclassified/windows_input_method/"  class="flex align-center">
+    <li class="">
+      <a href="/unclassified/windows_input_method/" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
         简体中文
       </a>
     </li>
     
-    <li>
-      <a href="/en/"  class="flex align-center">
+    <li class="active">
+      <a href="/en/" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
         English
       </a>
     </li>
@@ -282,7 +246,8 @@ pause
 
 
 
-  <div><a class="flex align-center" href="https://github.com/capscroLL/capscroLL.github.io/commit/dev/58779918b0b4f5e6c48cf9518d7f33097d008c9d" title='Last modified by sayHii | October 15, 2021' target="_blank" rel="noopener">
+
+  <div class="book-date"><a class="flex align-center" href="https://github.com/capscroLL/capscroLL.github.io/commit/dev/ef414c140a34767638936b1dd5c4cb73b99e367e" title='Last modified by sayHii | October 15, 2021' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>October 15, 2021</span>
     </a>
@@ -290,7 +255,7 @@ pause
 
 
 
-  <div>
+  <div class="book-edit">
     <a class="flex align-center" href="https://github.com/capscroLL/capscroLL.github.io/edit/dev/content/unclassified/windows_input_method.en.md" target="_blank" rel="noopener">
       <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
       <span>Edit this page</span>
