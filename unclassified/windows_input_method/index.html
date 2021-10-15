@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="微软拼音切换输入模式 微软拼音输入法, 切换全拼和双拼模式
+@echo off set MainKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\InputMethod\Settings\CHS reg query %MainKey% /v &#34;Enable Double Pinyin&#34; /s for /f &#34;skip=1&#34; %%i in (&#39;reg query %MainKey% /v &#34;Enable Double Pinyin&#34; /s ^| findstr /i &#34;0x1&#34;&#39;) do ( set isDouble=1 ) if not defined isDouble ( reg add %MainKey% /v &#34;Enable Double Pinyin&#34; /t REG_DWORD /d 0x1 /f echo 设定微软拼音模式为: 双拼 ) else ( reg add %MainKey% /v &#34;Enable Double Pinyin&#34; /t REG_DWORD /d 0x0 /f echo 设定微软拼音模式为: 全拼 ) pause ">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="微软拼音切换输入模式" />
+<meta property="og:description" content="微软拼音切换输入模式 微软拼音输入法, 切换全拼和双拼模式
+@echo off set MainKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\InputMethod\Settings\CHS reg query %MainKey% /v &#34;Enable Double Pinyin&#34; /s for /f &#34;skip=1&#34; %%i in (&#39;reg query %MainKey% /v &#34;Enable Double Pinyin&#34; /s ^| findstr /i &#34;0x1&#34;&#39;) do ( set isDouble=1 ) if not defined isDouble ( reg add %MainKey% /v &#34;Enable Double Pinyin&#34; /t REG_DWORD /d 0x1 /f echo 设定微软拼音模式为: 双拼 ) else ( reg add %MainKey% /v &#34;Enable Double Pinyin&#34; /t REG_DWORD /d 0x0 /f echo 设定微软拼音模式为: 全拼 ) pause " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://capscroLL.github.io/unclassified/windows_input_method/" />
+<meta property="article:modified_time" content="2021-10-15T15:18:32+08:00" />
+<title>微软拼音切换输入模式 | capscroLL</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.d4dc77238886ba9b68049c5bf55f2cee407597ba579bac1c5c89e9faef0ed76c.css" integrity="sha256-1Nx3I4iGuptoBJxb9V8s7kB1l7pXm6wcXInp&#43;u8O12w=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/zh.search.min.287f83ffb7bd16ed9fbfb583961938c4502c3ccd497e0c9a45bd7297d83e7e79.js" integrity="sha256-KH&#43;D/7e9Fu2fv7WDlhk4xFAsPM1JfgyaRb1yl9g&#43;fnk=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>capscroLL</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="搜索" aria-label="搜索" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>综合</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://capscroLL.github.io/unclassified/windows_input_method/" class=" active">微软拼音切换输入模式</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Linux</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://capscroLL.github.io/linux/ubuntu_change_hostname/" class="">Ubuntu 18.04 更改主机名</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/capscroLL" target="_blank" rel="noopener">
+        GitHub
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>微软拼音切换输入模式</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#微软拼音切换输入模式">微软拼音切换输入模式</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="微软拼音切换输入模式">微软拼音切换输入模式</h1>
+<p>微软拼音输入法, 切换全拼和双拼模式</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">@echo off
+
+set MainKey<span style="color:#f92672">=</span>HKEY_CURRENT_USER<span style="color:#ae81ff">\S</span>OFTWARE<span style="color:#ae81ff">\M</span>icrosoft<span style="color:#ae81ff">\I</span>nputMethod<span style="color:#ae81ff">\S</span>ettings<span style="color:#ae81ff">\C</span>HS
+
+reg query %MainKey% /v <span style="color:#e6db74">&#34;Enable Double Pinyin&#34;</span> /s
+
+<span style="color:#66d9ef">for</span> /f <span style="color:#e6db74">&#34;skip=1&#34;</span> %%i in <span style="color:#f92672">(</span><span style="color:#e6db74">&#39;reg query %MainKey% /v &#34;Enable Double Pinyin&#34; /s ^| findstr /i &#34;0x1&#34;&#39;</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">do</span> <span style="color:#f92672">(</span>
+    set isDouble<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+<span style="color:#f92672">)</span>
+
+<span style="color:#66d9ef">if</span> not defined isDouble <span style="color:#f92672">(</span>
+    reg add %MainKey% /v <span style="color:#e6db74">&#34;Enable Double Pinyin&#34;</span> /t REG_DWORD /d 0x1 /f
+    echo 设定微软拼音模式为: 双拼
+<span style="color:#f92672">)</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">(</span>
+    reg add %MainKey% /v <span style="color:#e6db74">&#34;Enable Double Pinyin&#34;</span> /t REG_DWORD /d 0x0 /f
+    echo 设定微软拼音模式为: 全拼
+<span style="color:#f92672">)</span>
+
+pause
+</code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+  <div><a class="flex align-center" href="https://github.com/capscroLL/capscroLL.github.io/commit/9a9463e51d8ccf445ec9c0d0bc1f8b200956f111" title='最后修改者 wangyixue02 | October 15, 2021' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>October 15, 2021</span>
+    </a>
+  </div>
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/capscroLL/capscroLL.github.io/edit/dev/content/zh/unclassified/windows_input_method.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>编辑本页</span>
+    </a>
+  </div>
+
+
+</div>
+
+
+
+  <script>(function(){function select(element){const selection=window.getSelection();const range=document.createRange();range.selectNodeContents(element);selection.removeAllRanges();selection.addRange(range);}
+document.querySelectorAll("pre code").forEach(code=>{code.addEventListener("click",function(event){select(code.parentElement);if(navigator.clipboard){navigator.clipboard.writeText(code.parentElement.textContent);}});});})();</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#微软拼音切换输入模式">微软拼音切换输入模式</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
