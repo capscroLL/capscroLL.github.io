@@ -1,0 +1,55 @@
+name: CI
+
+on:
+  push:
+    branches: 
+      - dev
+  pull_request:
+    branches: 
+      - dev
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          submodules: recursive
+
+      - name: install hugo
+        run: sudo apt install hugo -y
+
+      - name: hugo init
+        run: |
+          hugo --theme=book --baseUrl="https://capscroLL.github.io/"
+
+      - name: ssh-key
+        run: |
+          mkdir ~/.ssh -p
+          echo "${{secrets.PRIVATE_KEY}}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+
+      - name: pull main
+        run: |
+          git clone -b main git@github.com:capscroLL/capscroLL.github.io.git 
+
+      - name: update main
+        run: |
+          rm capscroLL.github.io/* -rf
+          mv public/* capscroLL.github.io/
+
+      - name: git commit & push
+        run: |
+          cd capscroLL.github.io
+          git config user.name "capscroLL"
+          git config user.email "capscroLL@outlook.com"
+          git add -A
+          git commit -m "update"
+          git push origin main
+
+      - name: clean
+        run: |
+          rm -rf ~/.ssh/id_rsa
+          rm -rf capscroLL.github.io
+
