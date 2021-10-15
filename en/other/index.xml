@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>others on capscroLL</title>
+    <link>https://capscroLL.github.io/en/other/</link>
+    <description>Recent content in others on capscroLL</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="https://capscroLL.github.io/en/other/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Input Method</title>
+      <link>https://capscroLL.github.io/en/other/file1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://capscroLL.github.io/en/other/file1/</guid>
+      <description>afsd</description>
+    </item>
+    
+  </channel>
+</rss>
