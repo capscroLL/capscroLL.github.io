@@ -11,7 +11,7 @@
 @echo off set MainKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\InputMethod\Settings\CHS reg query %MainKey% /v &#34;Enable Double Pinyin&#34; /s for /f &#34;skip=1&#34; %%i in (&#39;reg query %MainKey% /v &#34;Enable Double Pinyin&#34; /s ^| findstr /i &#34;0x1&#34;&#39;) do ( set isDouble=1 ) if not defined isDouble ( reg add %MainKey% /v &#34;Enable Double Pinyin&#34; /t REG_DWORD /d 0x1 /f echo 设定微软拼音模式为: 双拼 ) else ( reg add %MainKey% /v &#34;Enable Double Pinyin&#34; /t REG_DWORD /d 0x0 /f echo 设定微软拼音模式为: 全拼 ) pause " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://capscroLL.github.io/unclassified/windows_input_method/" />
-<meta property="article:modified_time" content="2021-10-16T00:25:06+08:00" />
+<meta property="article:modified_time" content="2021-10-16T01:46:37+08:00" />
 <title>微软拼音切换输入模式 | capscroLL</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
@@ -52,33 +52,40 @@ https://github.com/alex-shpak/hugo-book
   
 
 
+  
+    
+  
+    
+  
 
 
   
 
 
-<ul class="book-languages">
-  <li>
-    <input type="checkbox" id="languages" class="toggle" />
-    <label for="languages" class="flex justify-between">
-      <a role="button" class="flex align-center">
-        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+<div class="book-languages" tabindex="0" aria-haspopup="true">
+  <ul>
+    <li class="flex align-center">
+      <img src="/%20svg/translate.svg" class="book-icon" alt="Languages" />
+      简体中文
+    </li>
+  </ul>
+
+  <ul class="book-languages-list">
+    
+    <li>
+      <a href="/"  class="flex align-center">
         简体中文
       </a>
-    </label>
-
-    <ul>
-      
-      <li>
-        <a href="https://capscroLL.github.io/en/unclassified/windows_input_method/">
-          English
-        </a>
-      </li>
-      
-    </ul>
-  </li>
-</ul>
-
+    </li>
+    
+    <li>
+      <a href="/en/unclassified/windows_input_method/"  class="flex align-center">
+        English
+      </a>
+    </li>
+    
+  </ul>
+</div>
 
 
 
@@ -286,8 +293,47 @@ pause
         
   <div class="flex flex-wrap justify-between">
 
+  
 
-  <div><a class="flex align-center" href="https://github.com/capscroLL/capscroLL.github.io/commit/c1b120cfdf45f2877378ec47ee4c9e7bb6fb1eab" title='最后修改者 wangyixue02 | 2021 年 10 月 15 日' target="_blank" rel="noopener">
+
+  
+    
+  
+    
+  
+
+
+  
+
+
+<div class="book-languages" tabindex="0" aria-haspopup="true">
+  <ul>
+    <li class="flex align-center">
+      <img src="/%20svg/translate.svg" class="book-icon" alt="Languages" />
+      简体中文
+    </li>
+  </ul>
+
+  <ul class="book-languages-list">
+    
+    <li>
+      <a href="/"  class="flex align-center">
+        简体中文
+      </a>
+    </li>
+    
+    <li>
+      <a href="/en/unclassified/windows_input_method/"  class="flex align-center">
+        English
+      </a>
+    </li>
+    
+  </ul>
+</div>
+
+
+
+  <div><a class="flex align-center" href="https://github.com/capscroLL/capscroLL.github.io/commit/dev/58779918b0b4f5e6c48cf9518d7f33097d008c9d" title='最后修改者 sayHii | 2021 年 10 月 15 日' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>2021 年 10 月 15 日</span>
     </a>
