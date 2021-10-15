@@ -11,7 +11,7 @@
 @echo off set MainKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\InputMethod\Settings\CHS reg query %MainKey% /v &#34;Enable Double Pinyin&#34; /s for /f &#34;skip=1&#34; %%i in (&#39;reg query %MainKey% /v &#34;Enable Double Pinyin&#34; /s ^| findstr /i &#34;0x1&#34;&#39;) do ( set isDouble=1 ) if not defined isDouble ( reg add %MainKey% /v &#34;Enable Double Pinyin&#34; /t REG_DWORD /d 0x1 /f echo 设定微软拼音模式为: 双拼 ) else ( reg add %MainKey% /v &#34;Enable Double Pinyin&#34; /t REG_DWORD /d 0x0 /f echo 设定微软拼音模式为: 全拼 ) pause " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://capscroLL.github.io/unclassified/windows_input_method/" />
-<meta property="article:modified_time" content="2021-10-15T15:18:32+08:00" />
+<meta property="article:modified_time" content="2021-10-15T15:24:44+08:00" />
 <title>微软拼音切换输入模式 | capscroLL</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
@@ -235,7 +235,7 @@ pause
   <div class="flex flex-wrap justify-between">
 
 
-  <div><a class="flex align-center" href="https://github.com/capscroLL/capscroLL.github.io/commit/9a9463e51d8ccf445ec9c0d0bc1f8b200956f111" title='最后修改者 wangyixue02 | October 15, 2021' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/capscroLL/capscroLL.github.io/commit/bb7aa75bd920e3377501749a7f1d780164045341" title='最后修改者 wangyixue02 | October 15, 2021' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>October 15, 2021</span>
     </a>
@@ -266,7 +266,26 @@ document.querySelectorAll("pre code").forEach(code=>{code.addEventListener("clic
       
   
   <div class="book-comments">
-
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "capscroLL" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 </div>
   
  
