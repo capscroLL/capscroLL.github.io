@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://capscroLL.github.io/unclassified/</loc>
+    <lastmod>2021-10-15T18:25:38+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://capscroLL.github.io/en/unclassified/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://capscroLL.github.io/unclassified/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://capscroLL.github.io/linux/</loc>
+    <lastmod>2021-10-15T18:25:38+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://capscroLL.github.io/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://capscroLL.github.io/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://capscroLL.github.io/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://capscroLL.github.io/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://capscroLL.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://capscroLL.github.io/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://capscroLL.github.io/linux/ubuntu_change_hostname/</loc>
+    <lastmod>2021-10-15T18:25:38+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://capscroLL.github.io/</loc>
+    <lastmod>2021-10-15T18:25:38+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://capscroLL.github.io/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://capscroLL.github.io/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://capscroLL.github.io/unclassified/windows_input_method/</loc>
+    <lastmod>2021-10-15T18:25:38+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://capscroLL.github.io/en/unclassified/windows_input_method/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://capscroLL.github.io/unclassified/windows_input_method/"
+                />
+  </url>
+  
+</urlset>
