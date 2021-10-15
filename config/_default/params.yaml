@@ -27,7 +27,7 @@ BookRepo: https://github.com/capscroLL/capscroLL.github.io
 # Requires 'BookRepo' param.
 # Value used to construct a URL consisting of BookRepo/BookCommitPath/<commit-hash>
 # Github uses 'commit', Bitbucket uses 'commits'
-# BookCommitPath: commit
+BookCommitPath: commit/dev
 
 # Enable "Edit this page" links for 'doc' page type.
 # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.
@@ -68,6 +68,6 @@ BookServiceWorker: true
 
 # /!\ This is an experimental feature, might be removed or changed at any time
 # (Optional, experimental, default false) Enables a drop-down menu for translations only if a translation is present.
-BookTranslatedOnly: true
+BookTranslatedOnly: false
 
 
