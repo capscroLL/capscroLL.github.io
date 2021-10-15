@@ -1,0 +1,4 @@
+# Configure the date format used on the pages
+# - In git information
+# - In blog posts
+BookDateFormat: "January 02, 2006"

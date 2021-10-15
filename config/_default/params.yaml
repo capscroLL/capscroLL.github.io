@@ -37,7 +37,7 @@ BookEditPath: edit/dev
 # Configure the date format used on the pages
 # - In git information
 # - In blog posts
-BookDateFormat: "January 2, 2006"
+# BookDateFormat: "January 02, 2006"
 
 # (Optional, default true) Enables search function with flexsearch,
 # Index is built on fly, therefore it might slowdown your website.
