@@ -79,6 +79,12 @@ params:
   # Can be overwritten by same param in page frontmatter
   BookComments: true
 
+  utteranc:
+    enable: true
+    repo: capscroLL/capscroLL.github.io
+    issueTerm: comments
+    theme: preferred-color-scheme
+
   # /!\ This is an experimental feature, might be removed or changed at any time
   # (Optional, experimental, default false) Enables portable links and link checks in markdown pages.
   # Portable links meant to work with text editors and let you write markdown without {{< relref >}} shortcode
@@ -92,3 +98,5 @@ params:
   # /!\ This is an experimental feature, might be removed or changed at any time
   # (Optional, experimental, default false) Enables a drop-down menu for translations only if a translation is present.
   BookTranslatedOnly: true
+
+
