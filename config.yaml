@@ -5,6 +5,7 @@ defaultContentLanguage: zh
 
 disablePathToLower: true
 enableGitInfo: true
+disqusShortname: capscroLL
 
 markup:
   goldmark:
