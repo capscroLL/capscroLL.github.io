@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://capscroLL.github.io/en/unclassified/</loc>
-    <lastmod>2021-10-17T00:37:48+08:00</lastmod>
+    <lastmod>2021-10-17T01:46:26+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -15,11 +14,9 @@
                 hreflang="en"
                 href="https://capscroLL.github.io/en/unclassified/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://capscroLL.github.io/en/</loc>
-    <lastmod>2021-10-17T00:37:48+08:00</lastmod>
+    <lastmod>2021-10-17T01:46:26+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -30,9 +27,7 @@
                 hreflang="en"
                 href="https://capscroLL.github.io/en/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://capscroLL.github.io/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -44,9 +39,7 @@
                 hreflang="en"
                 href="https://capscroLL.github.io/en/categories/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://capscroLL.github.io/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
@@ -58,11 +51,9 @@
                 hreflang="en"
                 href="https://capscroLL.github.io/en/tags/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://capscroLL.github.io/en/unclassified/windows_input_method/</loc>
-    <lastmod>2021-10-17T00:37:48+08:00</lastmod>
+    <lastmod>2021-10-17T01:46:26+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -74,5 +65,4 @@
                 href="https://capscroLL.github.io/en/unclassified/windows_input_method/"
                 />
   </url>
-  
 </urlset>

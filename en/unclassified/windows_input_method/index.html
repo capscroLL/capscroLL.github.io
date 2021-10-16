@@ -3,24 +3,26 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Windows Input Method 微软拼音输入法, 切换全拼和双拼模式
+<meta name="description" content="Windows Input Method #  微软拼音输入法, 切换全拼和双拼模式
 @echo off set MainKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\InputMethod\Settings\CHS reg query %MainKey% /v &#34;Enable Double Pinyin&#34; /s for /f &#34;skip=1&#34; %%i in (&#39;reg query %MainKey% /v &#34;Enable Double Pinyin&#34; /s ^| findstr /i &#34;0x1&#34;&#39;) do ( set isDouble=1 ) if not defined isDouble ( reg add %MainKey% /v &#34;Enable Double Pinyin&#34; /t REG_DWORD /d 0x1 /f echo 设定微软拼音模式为: 双拼 ) else ( reg add %MainKey% /v &#34;Enable Double Pinyin&#34; /t REG_DWORD /d 0x0 /f echo 设定微软拼音模式为: 全拼 ) pause ">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Windows Input Method" />
-<meta property="og:description" content="Windows Input Method 微软拼音输入法, 切换全拼和双拼模式
+<meta property="og:description" content="Windows Input Method #  微软拼音输入法, 切换全拼和双拼模式
 @echo off set MainKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\InputMethod\Settings\CHS reg query %MainKey% /v &#34;Enable Double Pinyin&#34; /s for /f &#34;skip=1&#34; %%i in (&#39;reg query %MainKey% /v &#34;Enable Double Pinyin&#34; /s ^| findstr /i &#34;0x1&#34;&#39;) do ( set isDouble=1 ) if not defined isDouble ( reg add %MainKey% /v &#34;Enable Double Pinyin&#34; /t REG_DWORD /d 0x1 /f echo 设定微软拼音模式为: 双拼 ) else ( reg add %MainKey% /v &#34;Enable Double Pinyin&#34; /t REG_DWORD /d 0x0 /f echo 设定微软拼音模式为: 全拼 ) pause " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://capscroLL.github.io/en/unclassified/windows_input_method/" />
-<meta property="article:modified_time" content="2021-10-17T00:37:48+08:00" />
+<meta property="og:url" content="https://capscroLL.github.io/en/unclassified/windows_input_method/" /><meta property="article:section" content="unclassified" />
+
+<meta property="article:modified_time" content="2021-10-17T01:46:26+08:00" />
+
 <title>Windows Input Method | capscroLL</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
   <link rel="alternate" hreflang="zh" href="https://capscroLL.github.io/unclassified/windows_input_method/" title="微软拼音切换输入模式">
-<link rel="stylesheet" href="/book.min.d9d4fc0aac7857637ba0b13c3ef5e9c65042b61dec00899b30054866ecbd5a19.css" integrity="sha256-2dT8Cqx4V2N7oLE8PvXpxlBCth3sAImbMAVIZuy9Whk=" crossorigin="anonymous">
+<link rel="stylesheet" href="/book.min.91f48bba1192b452622ac4de9a7a1fb22195f91870ccc708dd02ce44ead196b3.css" integrity="sha256-kfSLuhGStFJiKsTemnofsiGV&#43;RhwzMcI3QLOROrRlrM=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.1101e0643dc649cbdcc82f84729fe0e6d3d6f7ea16593587f78c07bf3c6d5b23.js" integrity="sha256-EQHgZD3GScvcyC&#43;Ecp/g5tPW9&#43;oWWTWH94wHvzxtWyM=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.739328d4215ed2e6c990dde8468beb0033b0e978da1c3d8661f819d8d55272f8.js" integrity="sha256-c5Mo1CFe0ubJkN3oRovrADOw6XjaHD2GYfgZ2NVScvg=" crossorigin="anonymous"></script>
 
-  <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ=" crossorigin="anonymous"></script>
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -130,7 +132,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var menu=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  
@@ -174,9 +176,12 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="windows-input-method">Windows Input Method</h1>
+  <article class="markdown"><h1 id="windows-input-method">
+  Windows Input Method
+  <a class="anchor" href="#windows-input-method">#</a>
+</h1>
 <p>微软拼音输入法, 切换全拼和双拼模式</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">@echo off
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">@echo off
 
 set MainKey<span style="color:#f92672">=</span>HKEY_CURRENT_USER<span style="color:#ae81ff">\S</span>OFTWARE<span style="color:#ae81ff">\M</span>icrosoft<span style="color:#ae81ff">\I</span>nputMethod<span style="color:#ae81ff">\S</span>ettings<span style="color:#ae81ff">\C</span>HS
 
@@ -240,7 +245,7 @@ pause
 
 
 
-  <div class="book-date"><a class="flex align-center" href="https://github.com/capscroLL/capscroLL.github.io/commit/dev/278cfc7987af673ce8b03930f58c8a6376289ad8" title='Last modified by sayHii | October 16, 2021' target="_blank" rel="noopener">
+  <div class="book-date"><a class="flex align-center" href="https://github.com/capscroLL/capscroLL.github.io/commit/dev/fd74f99f462d99f50ffadf2250d2901317e33ec1" title='Last modified by capscroLL | October 16, 2021' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>October 16, 2021</span>
     </a>
@@ -260,8 +265,7 @@ pause
 
 
 
-  <script>(function(){function select(element){const selection=window.getSelection();const range=document.createRange();range.selectNodeContents(element);selection.removeAllRanges();selection.addRange(range);}
-document.querySelectorAll("pre code").forEach(code=>{code.addEventListener("click",function(event){select(code.parentElement);if(navigator.clipboard){navigator.clipboard.writeText(code.parentElement.textContent);}});});})();</script>
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
 
 
  
@@ -271,14 +275,27 @@ document.querySelectorAll("pre code").forEach(code=>{code.addEventListener("clic
       
   
   <div class="book-comments">
+
+
+
+
+  
+  
+
+  
+    
+  
+
+
 <script src="https://utteranc.es/client.js"
         repo="capscroLL/capscroLL.github.io"
-        issue-term="pathname"
+        issue-term="/unclassified/windows_input_method/"
         theme="preferred-color-scheme"
         comment-order="desc"
         crossorigin="anonymous"
         async>
 </script>
+
 
 
 
