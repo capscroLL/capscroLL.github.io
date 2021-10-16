@@ -1,6 +1,5 @@
 ---
 title: 关于
-bookComments: false
 i18n: [en]
 ---
 
