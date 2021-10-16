@@ -1,9 +1,20 @@
-{{ if .Site.Params.utteranc.enable }}
-<script src="https://utteranc.es/client.js"
-        repo="{{ .Site.Params.utteranc.repo }}"
-        issue-term="{{ .Site.Params.utteranc.issueTerm }}"
-        theme="{{ .Site.Params.utteranc.theme }}"
-        crossorigin="anonymous"
-        async>
+{{ $Gitalk := .Site.Params.gitalk }}
+
+<link rel="stylesheet" href='{{ $Gitalk.css }}'>
+<script src="{{ $Gitalk.js }}"></script>
+
+<div id="gitalk-container"></div>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '{{ $Gitalk.clientID }}',
+        clientSecret: '{{ $Gitalk.clientSecret }}',
+        repo: '{{ $Gitalk.repo }}',
+        owner: '{{ $Gitalk.owner }}',
+        admin: ['{{ $Gitalk.owner }}'],
+        id: location.pathname,
+        language: '{{ .Site.Language.Lang }}',
+        distractionFreeMode: false,
+    })
+    gitalk.render('gitalk-container');
 </script>
-{{ end }}
+
