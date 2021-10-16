@@ -5,15 +5,14 @@
 
 <script type="text/javascript">
     var gitalk = new Gitalk({
-        clientID: 'e5c9e63f28301165806c',
-        clientSecret: '1063bc6e8a54822b1a80f0945f09aa90d0393830',
+        clientID: "${{secrets.GITALK_CLIENT_ID}}",
+        clientSecret: '${{secrets.GITALK_CLIENT_SECRET}}',
         repo: 'capscroLL.github.io',
         owner: 'capscroLL',
         admin: ['capscroLL'],
         id: location.pathname,      // Ensure uniqueness and length less than 50
         distractionFreeMode: false  // Facebook-like distraction free mode
     })
-
     gitalk.render('gitalk-container')
 </script>
 
