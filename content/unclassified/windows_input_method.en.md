@@ -1,5 +1,7 @@
 ---
 title: Windows Input Method
+i18n:
+  - zh
 ---
 
 # Windows Input Method
