@@ -24,7 +24,7 @@ jobs:
 
       - name: hugo init
         run: |
-          hugo --theme=book --baseUrl="https://capscroLL.github.io/"
+          ./hugo --theme=book --baseUrl="https://capscroLL.github.io/"
 
       - name: ssh-key
         run: |
