@@ -9,6 +9,10 @@
   {{ if hasPrefix $issueTerm $langPrefix }}
     {{ $issueTerm = replace .Page.RelPermalink $langPrefix "" 1}}
   {{ end }}
+
+  {{ if (eq $issueTerm "/") }}
+    {{ $issueTerm = "/about"}}
+  {{ end }}
 {{ end }}
 
 <script src="https://utteranc.es/client.js"
