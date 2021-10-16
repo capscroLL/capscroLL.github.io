@@ -53,7 +53,7 @@ BookComments: true
 utteranc:
   enable: true
   repo: capscroLL/capscroLL.github.io
-  issueTerm: pathname
+  issueTerm: i18nPathname
   theme: preferred-color-scheme
 
 #gitalk:
