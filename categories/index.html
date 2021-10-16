@@ -276,20 +276,6 @@ https://github.com/alex-shpak/hugo-book
 
   <ul class="book-languages-list">
     
-    <li class="active">
-      <a href="/" class="flex align-center">
-        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
-        简体中文
-      </a>
-    </li>
-    
-    <li class="">
-      <a href="/en/categories/" class="flex align-center">
-        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
-        English
-      </a>
-    </li>
-    
   </ul>
 </div>
 
@@ -308,7 +294,26 @@ document.querySelectorAll("pre code").forEach(code=>{code.addEventListener("clic
 
 
  
-        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: 'e5c9e63f28301165806c',
+        clientSecret: '1063bc6e8a54822b1a80f0945f09aa90d0393830',
+        repo: 'capscroLL.github.io',
+        owner: 'capscroLL',
+        admin: ['capscroLL'],
+        id: location.pathname,      
+        distractionFreeMode: false  
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+
+
       </footer>
 
       
