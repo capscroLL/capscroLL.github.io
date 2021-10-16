@@ -1,7 +1,11 @@
 ---
 title: About
+bookComments: false
+i18n: [zh]
 ---
 
-# About
+**The day is near**
 
-123
+**when thy burden will become thy gift**
+
+**and thy sufferings will light up thy path**
