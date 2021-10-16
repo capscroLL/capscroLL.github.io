@@ -18,7 +18,9 @@ jobs:
           submodules: recursive
 
       - name: install hugo
-        run: sudo apt install hugo -y
+        run: |
+          wget https://github.com/gohugoio/hugo/releases/download/v0.88.1/hugo_extended_0.88.1_Linux-64bit.tar.gz
+          tar -zxvf hugo_extended_0.88.1_Linux-64bit.tar.gz
 
       - name: hugo init
         run: |
